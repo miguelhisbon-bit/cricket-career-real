@@ -67,7 +67,46 @@
 
     <section id="screen-career" class="screen">
       <h2>My Career</h2>
-      <div id="career-content"></div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:start">
+        <div style="min-width:240px">
+          <div class="card"><button data-route="player">Player</button></div>
+          <div class="card"><button data-route="skills">Skills</button></div>
+          <div class="card"><button data-route="records">Records</button></div>
+          <div class="card"><button data-route="trophies">Trophies</button></div>
+          <div class="card"><button data-route="achievements">Achievements</button></div>
+        </div>
+        <div style="flex:1">
+          <div id="career-content"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen-player" class="screen">
+      <h2>Player Profile</h2>
+      <div style="display:flex;gap:12px;align-items:flex-start">
+        <div id="player-3d" style="width:320px;height:320px;background:transparent;border-radius:8px"></div>
+        <div id="player-profile" style="flex:1"></div>
+      </div>
+    </section>
+
+    <section id="screen-skills" class="screen">
+      <h2>Skills</h2>
+      <div id="skills-area"></div>
+    </section>
+
+    <section id="screen-records" class="screen">
+      <h2>Records</h2>
+      <div id="records-area"></div>
+    </section>
+
+    <section id="screen-trophies" class="screen">
+      <h2>Trophies</h2>
+      <div id="trophies-area"></div>
+    </section>
+
+    <section id="screen-achievements" class="screen">
+      <h2>Achievements</h2>
+      <div id="achievements-area"></div>
     </section>
 
     <section id="screen-match" class="screen">
@@ -77,13 +116,56 @@
 
     <section id="screen-customize" class="screen">
       <h2>Customize</h2>
-      <div id="customize-area"></div>
+      <div style="display:flex;gap:12px;align-items:flex-start">
+        <div style="min-width:220px">
+          <div class="card"><button data-route="customize-face">Face</button></div>
+          <div class="card"><button data-route="customize-hair">Hair</button></div>
+          <div class="card"><button data-route="customize-bat">Bat</button></div>
+          <div class="card"><button data-route="customize-shoes">Shoes</button></div>
+          <div class="card"><button data-route="customize-kit">Kit</button></div>
+        </div>
+        <div style="flex:1"><div id="customize-area"></div></div>
+      </div>
+    </section>
+
+    <section id="screen-customize-face" class="screen">
+      <h2>Customize - Face</h2>
+      <div id="custom-face-area"></div>
+    </section>
+    <section id="screen-customize-hair" class="screen">
+      <h2>Customize - Hair</h2>
+      <div id="custom-hair-area"></div>
+    </section>
+    <section id="screen-customize-bat" class="screen">
+      <h2>Customize - Bat</h2>
+      <div id="custom-bat-area"></div>
+    </section>
+    <section id="screen-customize-shoes" class="screen">
+      <h2>Customize - Shoes</h2>
+      <div id="custom-shoes-area"></div>
+    </section>
+    <section id="screen-customize-kit" class="screen">
+      <h2>Customize - Kit</h2>
+      <div id="custom-kit-area"></div>
     </section>
 
     <section id="screen-club" class="screen">
       <h2>Club</h2>
-      <div id="club-area"></div>
+      <div style="display:flex;gap:12px">
+        <div style="min-width:220px">
+          <div class="card"><button data-route="squad">Squad</button></div>
+          <div class="card"><button data-route="transfers">Transfers</button></div>
+          <div class="card"><button data-route="contract">Contract</button></div>
+          <div class="card"><button data-route="team">Team Management</button></div>
+        </div>
+        <div style="flex:1"><div id="club-area"></div></div>
+      </div>
     </section>
+
+    <section id="screen-squad" class="screen"><h2>Squad</h2><div id="squad-area"></div></section>
+    <section id="screen-transfers" class="screen"><h2>Transfers</h2><div id="transfers-area"></div></section>
+    <section id="screen-contract" class="screen"><h2>Contract</h2><div id="contract-area"></div></section>
+    <section id="screen-team" class="screen"><h2>Team Management</h2><div id="team-area"></div></section>
 
     <div id="toast" class="toast" hidden></div>
   </main>
