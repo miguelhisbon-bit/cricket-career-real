@@ -1,0 +1,7 @@
+/* ui.css */
+button{cursor:pointer}
+button:disabled{opacity:0.5;cursor:not-allowed}
+.card{background:var(--panel);padding:12px;border-radius:10px}
+.stat{display:flex;justify-content:space-between;padding:6px 0}
+.progress{height:10px;background:#0b1520;border-radius:6px;overflow:hidden}
+.progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#6ef)}

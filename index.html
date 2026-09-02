@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CRICKET LEGENDS 3D — CAREER MODE (Dev)</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/ui.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+  <div id="loading" class="overlay">Loading... <button id="loading-failsafe" hidden>Continue</button></div>
+
+  <header class="topbar">
+    <div class="logo">CRICKET LEGENDS 3D</div>
+    <div class="top-stats">
+      <span id="player-xp">XP: 0</span>
+      <span id="player-money">Coins: 0</span>
+      <button id="btn-settings">⚙️</button>
+    </div>
+  </header>
+
+  <main id="app">
+    <nav class="bottom-nav">
+      <button data-route="home" class="active">Home</button>
+      <button data-route="career">Career</button>
+      <button data-route="match">Match</button>
+      <button data-route="customize">Customize</button>
+      <button data-route="club">Club</button>
+    </nav>
+
+    <section id="screen-home" class="screen active">
+      <div class="cinematic">
+        <div id="three-container" class="threebox"></div>
+        <div class="panels">
+          <div class="player-card">
+            <h2 id="player-name">Player</h2>
+            <div id="player-meta">Country • Role • Overall</div>
+            <div id="player-stats" class="stat-grid"></div>
+            <button id="btn-continue">CONTINUE CAREER</button>
+          </div>
+          <div class="next-match-card">
+            <h3>Next Match</h3>
+            <div id="next-match">No scheduled match</div>
+            <button id="btn-preview">Match Preview</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen-career" class="screen">
+      <h2>My Career</h2>
+      <div id="career-content"></div>
+    </section>
+
+    <section id="screen-match" class="screen">
+      <h2>Match</h2>
+      <div id="match-area"></div>
+    </section>
+
+    <section id="screen-customize" class="screen">
+      <h2>Customize</h2>
+      <div id="customize-area"></div>
+    </section>
+
+    <section id="screen-club" class="screen">
+      <h2>Club</h2>
+      <div id="club-area"></div>
+    </section>
+
+    <div id="toast" class="toast" hidden></div>
+  </main>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

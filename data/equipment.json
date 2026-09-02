@@ -1,0 +1,5 @@
+{
+  "equipment": [
+    {"id":"bat_classic","name":"Classic Bat","power":1.0,"control":1.0}
+  ]
+}

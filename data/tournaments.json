@@ -1,0 +1,5 @@
+{
+  "tournaments": [
+    {"id":"t1","name":"T20 League","type":"T20"}
+  ]
+}

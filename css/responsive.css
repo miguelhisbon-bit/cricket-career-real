@@ -1,0 +1,2 @@
+/* responsive.css */
+@media(max-width:600px){.bottom-nav{width:96%;left:2%;transform:none;display:flex;justify-content:space-around}}
