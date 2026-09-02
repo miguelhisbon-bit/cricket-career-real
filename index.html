@@ -12,7 +12,7 @@
   <div id="loading" class="overlay">Loading... <button id="loading-failsafe" hidden>Continue</button></div>
 
   <header class="topbar">
-    <div class="logo">CRICKET LEGENDS 3D</div>
+    <div class="logo">CRICKET LEGENDS 3D <small style="font-weight:400;margin-left:8px;opacity:.6">CAREER MODE</small></div>
     <div class="top-stats">
       <span id="player-xp">XP: 0</span>
       <span id="player-money">Coins: 0</span>
@@ -37,13 +37,30 @@
             <h2 id="player-name">Player</h2>
             <div id="player-meta">Country • Role • Overall</div>
             <div id="player-stats" class="stat-grid"></div>
-            <button id="btn-continue">CONTINUE CAREER</button>
+            <div style="margin-top:12px;display:flex;gap:8px">
+              <button id="btn-continue" class="primary">CONTINUE CAREER</button>
+              <button id="btn-preview">Match Preview</button>
+            </div>
           </div>
+
           <div class="next-match-card">
             <h3>Next Match</h3>
             <div id="next-match">No scheduled match</div>
-            <button id="btn-preview">Match Preview</button>
+            <div style="margin-top:8px" id="match-countdown"></div>
           </div>
+
+          <div class="card" id="career-news">
+            <h4>Career News</h4>
+            <ul id="news-list" style="margin:6px 0 0 16px;padding:0;list-style:disc;color:var(--muted)">
+              <li>No news</li>
+            </ul>
+          </div>
+
+          <div class="card" id="recent-performance">
+            <h4>Recent Performance</h4>
+            <div id="recent-list" style="display:flex;gap:8px;flex-wrap:wrap"></div>
+          </div>
+
         </div>
       </div>
     </section>
